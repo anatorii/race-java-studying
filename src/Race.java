@@ -67,6 +67,8 @@ class RaceCar extends Thread {
 
             diff = (Race.mainFrame.getContentPane().getWidth() - 5) - (d.x + d.width);
 
+            car.distance = (int) (Math.random() * 10 + 5);
+
             if (diff > car.distance) {
                 d.x += car.distance;
                 car.setBounds(d);
